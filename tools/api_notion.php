@@ -1,20 +1,31 @@
 <?php
-// Retrive database
-function dbRequests(){
+// Read token on my mac
+function getToken(){
+    $myfile = file_get_contents("token-api.json") or die("Unable to read file!");
+    $data =  json_decode($myfile,true);
+    return $data["token"];
+}
+
+$tokens = getToken();
+
+// Query the Notion database
+function dbRequests($tokens){
     $curl = curl_init();
 
     curl_setopt_array($curl, [
-        CURLOPT_URL => "https://api.notion.com/v1/databases/8026b887661d48749704d3d91dc9c974",
+        CURLOPT_URL => "https://api.notion.com/v1/databases/8026b887661d48749704d3d91dc9c974/query",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,
         CURLOPT_TIMEOUT => 30,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-        CURLOPT_CUSTOMREQUEST => "GET",
+        CURLOPT_CUSTOMREQUEST => "POST",
+        CURLOPT_POSTFIELDS => "{\"page_size\":100}",
         CURLOPT_HTTPHEADER => [
-            "Authorization: Bearer secret_7d6cM7KbAaWJPj67HyjFsYlC1GT1dIKiankfDZyg4Aq",
+            "Authorization: Bearer $tokens",
             "Notion-Version: 2022-06-28",
-            "accept: application/json"
+            "accept: application/json",
+            "content-type: application/json"
         ],
     ]);
 
@@ -24,14 +35,11 @@ function dbRequests(){
     curl_close($curl);
 
     if ($err) {
-        $answer =  "cURL Error #:" . $err;
+        return "cURL Error #:" . $err;
     } else {
-        $answer = $response;
+        return $response;
     }
-
-    return $answer;
-        
 }
-echo dbRequests();
+echo dbRequests($tokens);
 
 ?>
