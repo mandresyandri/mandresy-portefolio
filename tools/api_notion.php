@@ -32,4 +32,6 @@ function dbRequests(){
     return $answer;
         
 }
+echo dbRequests();
+
 ?>

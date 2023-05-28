@@ -32,7 +32,7 @@
               <div class="subheader-text project-title">Project Name</div>
               <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="./views/project-template.php">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
@@ -43,7 +43,7 @@
               <div class="subheader-text project-title">Project Name</div>
               <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="./views/project-template.php">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
@@ -54,7 +54,7 @@
               <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
               <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="./views/project-template.php">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
