@@ -26,11 +26,15 @@
                 - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
+            <?php
+            include("./tools/api_notion.php");
+            $arr = array(dbRequests());
+            ?>
           <div class="project-card">
-            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <img src="<?php echo $arr[0]['results'][2]['cover']['file']['url']?>" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title"><?php echo $arr[0]["results"][2]["properties"]["Titre"]["title"][0]["text"]["content"] ?></div>
+              <div class="body-text project-card-text"><?php echo $arr[0]["results"][2]["properties"]["Description"]["rich_text"][0]["text"]["content"] ?></div>
             </div>
             <a class="button" href="./views/project-template.php">
               <span class="button-text">Read More</span>
@@ -38,10 +42,10 @@
             </a>
           </div>
           <div class="project-card">
-            <img src="./assets/images/code.jpeg" class="project-image">
+            <img src="<?php echo $arr[0]['results'][1]['cover']['file']['url']?>" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title"><?php echo $arr[0]["results"][1]["properties"]["Titre"]["title"][0]["text"]["content"] ?></div>
+              <div class="body-text project-card-text"><?php echo $arr[0]["results"][1]["properties"]["Description"]["rich_text"][0]["text"]["content"] ?></div>
             </div>
             <a class="button" href="./views/project-template.php">
               <span class="button-text">Read More</span>
@@ -49,10 +53,10 @@
             </a>
           </div>
           <div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
+            <img src="<?php echo $arr[0]['results'][0]['cover']['file']['url']?>" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title"><?php echo $arr[0]["results"][0]["properties"]["Titre"]["title"][0]["text"]["content"] ?></div>
+              <div class="body-text project-card-text"><?php echo $arr[0]["results"][0]["properties"]["Description"]["rich_text"][0]["text"]["content"] ?></div>
             </div>
             <a class="button" href="./views/project-template.php">
               <span class="button-text">Read More</span>

@@ -1,15 +1,11 @@
 <?php
-// Read token on my mac
-function getToken(){
-    $myfile = file_get_contents("token-api.json") or die("Unable to read file!");
-    $data =  json_decode($myfile,true);
-    return $data["token"];
-}
-
-$tokens = getToken();
-
 // Query the Notion database
-function dbRequests($tokens){
+function dbRequests(){
+    // Read token stored in local file
+    $myfile = file_get_contents("./tools/token-api.json") or die("Unable to read file!");
+    $data =  json_decode($myfile,true);
+    $tokens = $data["token"];
+
     $curl = curl_init();
 
     curl_setopt_array($curl, [
@@ -37,9 +33,18 @@ function dbRequests($tokens){
     if ($err) {
         return "cURL Error #:" . $err;
     } else {
-        return $response;
+        $jsonResponse = json_decode($response, true);
+        return $jsonResponse;
     }
 }
-echo dbRequests($tokens);
+// echo dbRequests(); // Debug the functions
+
+// Trying to get the most important data
+//$arr = array(dbRequests());
+// request design
+// print_r($arr[0]["results"][0]["properties"]["Description"]["rich_text"][0]["text"]["content"]); // Description rapide
+// print_r($arr[0]["results"][0]["properties"]["Titre"]["title"][0]["text"]["content"]); // titre de la page
+//print_r($arr[0]["results"][2]["cover"]["file"]["url"]);
+
 
 ?>
