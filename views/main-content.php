@@ -1,6 +1,5 @@
  <!-- MAIN PAGE CONTENT -->
  <div id="main-content">
-
 <!-- PORTFOLIO HEADER -->
 <div id="portfolio-header">
   <div id="portfolio-header-image-container">

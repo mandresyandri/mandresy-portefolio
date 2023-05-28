@@ -2,16 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
     <link rel="icon" href="../assets/images/1311.png" />
     <title>Mandresy Andri</title>
     <meta name="description" content="A portfolio template for the Unemployables community.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/typography.css">
     <link rel="stylesheet" href="../css/utilities.css">
-
     <script defer src="../js/script.js"></script>
 </head>
 <body>
