@@ -1,7 +1,7 @@
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My Work / My Projects</span>
+        <span class="subheader-text">Mon travail / Mes projets</span>
 
         <div class="projects-container">
           <!-- 

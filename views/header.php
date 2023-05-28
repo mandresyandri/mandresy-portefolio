@@ -15,7 +15,7 @@
      -->
     <link rel="icon" href="#" />
 		<title>Mandresy Andri</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="description" content="Portefolio de Mandresy">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="./css/layout.css">
@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./css/utilities.css">
 
 		<script defer src="./js/script.js"></script>
+		<script defer src="./js/typingEffect.js"></script>
+    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
 	</head>
 	<body>
     <!-- NAVBAR -->
@@ -32,7 +34,7 @@
         <span class="nav-title">Mandresy Portfolio</span>
          <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
         <a class="button" href="mailto:whitevans.eth@gmail.com">
-          <span class="button-text">Contact Me</span>
+          <span class="button-text">Contact</span>
         </a>
       </a>
     </div>
@@ -65,7 +67,7 @@
           <div id="portfolio-header-text-container">
             <div class="header-text">
               <span class="main-title">Bonjour ! Je suis <a href="https://www.linkedin.com/in/mandresy-andriantsoanavalona-27aabb21a/" target="_blank">@mandresyandri</a>.</span>
-              <div class="body-text">Apprenti à la <a href="https://meudon.fr" target="_blank">Ville de Meudon</a> intéressé par la science des données <a class="hashtag">#dataviz</a> <a class="hashtag">#machinelearning</a> <a class="hashtag">#deeplearning</a></div>
+              <div class="body-text">Apprenti à la <a href="https://meudon.fr" target="_blank">Ville de Meudon</a> intéressé par la science des données <span id="typing-text"></span></div>
             </div>
             <a class="button" id="my-work-link">
               <span class="button-text">Découvrez mes projets</span> 
