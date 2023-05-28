@@ -1,5 +1,3 @@
-
-
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->

@@ -59,7 +59,7 @@ a.icon-link:hover {
 
 a.button {
   padding: 8px 16px;
-  border: 3px solid #141414;
+  border: 3px solid #0a66c2;
   border-radius: 50px;
   color: black;
   text-decoration: none;
@@ -68,6 +68,19 @@ a.button {
   gap: 5px;
   align-items: center;
 }
+
+/* ORIGINAL FONT */
+/* a.button {
+  padding: 8px 16px;
+  border: 3px solid #141414;
+  border-radius: 50px;
+  color: black;
+  text-decoration: none;
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+} */
 
 a.button:hover {
   text-decoration: underline;
@@ -103,4 +116,20 @@ a.no-underline:hover {
   #footer {
     padding: 20px 20px;
   }
+}
+
+
+a {
+  color:#141414;
+  text-decoration: none;
+  font-weight:bolder;
+}
+
+a.hashtag {
+  font-weight: bold;
+  color: #0a66c2;
+}
+
+a:hover{
+  text-decoration: underline;
 }

@@ -1,5 +1,3 @@
-
-
     <!-- FOOTER -->
     <div id="footer">
       <!-- 
@@ -23,7 +21,7 @@
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+      <a class="icon-link" href="mailto:mandresy.andriantsoanavalona@gmail.com">
         <image src="./assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>

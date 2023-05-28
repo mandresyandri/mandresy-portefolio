@@ -1,5 +1,3 @@
-
-
       <!-- ABOUT SECTION -->
       <!-- 
         TODO
