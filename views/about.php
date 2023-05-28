@@ -1,10 +1,4 @@
       <!-- ABOUT SECTION -->
-      <!-- 
-        TODO
-
-        - Change the subheader-text to whatever header you want
-        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
-      -->
       <div id="about-section">
         <span class="subheader-text">Mon parcours / À propos de moi</span>
         <div class="about-section-content">

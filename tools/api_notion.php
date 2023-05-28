@@ -38,13 +38,4 @@ function dbRequests(){
     }
 }
 // echo dbRequests(); // Debug the functions
-
-// Trying to get the most important data
-//$arr = array(dbRequests());
-// request design
-// print_r($arr[0]["results"][0]["properties"]["Description"]["rich_text"][0]["text"]["content"]); // Description rapide
-// print_r($arr[0]["results"][0]["properties"]["Titre"]["title"][0]["text"]["content"]); // titre de la page
-//print_r($arr[0]["results"][2]["cover"]["file"]["url"]);
-
-
 ?>

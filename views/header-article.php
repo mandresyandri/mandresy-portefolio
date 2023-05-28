@@ -2,16 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!--
-      TODO
 
-      Upload your Unemployable (or whatever photo you like) to the assets/images folder
-      and change the name of the image below to match the uploaded one
-
-      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
-
-      This should be the same across all pages.
-     -->
     <link rel="icon" href="../assets/images/1311.png" />
     <title>Mandresy Andri</title>
     <meta name="description" content="A portfolio template for the Unemployables community.">
