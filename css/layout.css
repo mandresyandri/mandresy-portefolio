@@ -13,6 +13,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* SAUVEGARDE BG COLORS */
+  /* background-color: #F9F5F6; */
+  /* background-color: #F2F7FF; */
+  /* background-color: #F7FBFC; */
+  background-color: #FAFAFA;
 }
 
 /* Main Page Layout */
@@ -67,6 +72,14 @@ body {
 
 /* Contact Section */
 
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  width: 450px;
+}
+
 #contact-section {
   display: flex;
   flex-direction: column;
@@ -83,12 +96,26 @@ button.button {
   padding: 8px 16px;
   border: 3px solid #0a66c2;
   border-radius: 50px;
-  background-color: white;
+  background-color: #FAFAFA;
   text-decoration: none;
   width: fit-content;
   display: flex;
   gap: 5px;
   align-items: center;
+}
+
+.form-box > input, textarea {
+  width: 100%;
+  padding: 10px 16px;
+  border:0;
+  border-radius: 12px;
+  box-shadow:0 0 5px 2px #769FCD;
+  background-color: #FAFAFA;
+}
+
+.form-box > input:focus, textarea:focus {
+  border: 3px solid #0a66c2;
+  box-shadow:0 0 0 0;
 }
 
 /* Project Section */
@@ -231,6 +258,21 @@ button.button {
   .project-card {
     max-width: 100%;
   }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    width: 300px;
+  }
+
+  .form-box > input:focus, textarea:focus {
+    border: 3px solid #0a66c2;
+    box-shadow:0 0 0 0;
+  }
+
+
 }
 
 

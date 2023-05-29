@@ -1,5 +1,6 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1D242B;
 }
 
 .nav-title {
@@ -11,6 +12,12 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
+
+.form-box > input::placeholder, textarea::placeholder  {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 
 .image-caption {
   font-size: 14px;
@@ -48,3 +55,17 @@ body {
   -webkit-box-orient: vertical;
 }
 
+.body-text-contact {
+  width: 470px;
+  line-height: 1.5;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .body-text-contact {
+    width: 300px;
+    line-height: 1.5;
+  }
+}
