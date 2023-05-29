@@ -132,3 +132,7 @@ a.hashtag {
 a:hover{
   text-decoration: underline;
 }
+
+span.button-text:hover{
+  text-decoration: underline;
+}
