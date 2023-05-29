@@ -26,7 +26,7 @@
 
           (this should be the same across all pages)
         -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
+        <a class="button" href="../index.php#contact-section">
             <span class="button-text">Contact</span>
         </a>
     </a>

@@ -20,7 +20,7 @@
         <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
         <span class="nav-title">Mandresy Andri</span>
          <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
+        <a class="button" href="index.php#contact-section">
           <span class="button-text">Contact</span>
         </a>
       </a>

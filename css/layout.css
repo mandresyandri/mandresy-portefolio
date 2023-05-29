@@ -74,8 +74,18 @@ body {
   gap: 34px;
 }
 
+/* Contact Section */
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-
+.contact-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
 
 /* Project Section */
 
