@@ -26,7 +26,7 @@
 
           (this should be the same across all pages)
         -->
-        <a class="button" id="scroll-smooth" href="index.php#contact-section">
+        <a class="button" id="scroll-smooth" href="../index.php#contact-section">
           <span id="scroll-smooth" class="button-text">Contact</span>
         </a>
     </a>
