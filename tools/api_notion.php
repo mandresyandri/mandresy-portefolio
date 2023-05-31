@@ -3,7 +3,7 @@
 function dbRequests(){
     // Read token stored in local file
     $myfile = file_get_contents("./tools/token-api.json") or die("Unable to read file!");
-    // $myfile = file_get_contents("token-api.json") or die("Unable to read file!"); // debug the api
+    //$myfile = file_get_contents("token-api.json") or die("Unable to read file!"); // debug the api
     $data =  json_decode($myfile,true);
     $tokens = $data["token"];
 
@@ -38,5 +38,10 @@ function dbRequests(){
         return $jsonResponse;
     }
 }
-// echo dbRequests(); // Debug the functions
+
+/*function pageRequests(){
+
+}*/
+
+//print_r(array(dbRequests()));
 ?>
