@@ -39,9 +39,66 @@ function dbRequests(){
     }
 }
 
-/*function pageRequests(){
+//print_r(array(dbRequests()));
 
+// collecte de l'id des pages publiées
+/*function getPageID(){
+    // récupération des id de page dans notion
+    $arr = array(dbRequests());
+    $taille = count($arr[0]['results']);
+    $i = $taille - 1;
+    $ids = [];
+
+   while ($i >= 0){
+       if ($arr[0]["results"][$i]["properties"]["Status"]["select"]["name"] == "publier"){
+        array_push($ids, $arr[0]["results"][$i]["id"]);
+        $i--;
+       }
+       else{
+           $i--;
+       }
+    }
+    return $ids;
 }*/
 
-//print_r(array(dbRequests()));
+//print_r(getPageID());
+
+// Nouveau test avec les pages ID
+function pageRequests($pageID){
+    $myfile = file_get_contents("./tools/token-api.json") or die("Unable to read file!");
+    // $myfile = file_get_contents("token-api.json") or die("Unable to read file!"); // debug the api
+    $data =  json_decode($myfile,true);
+    $tokens = $data["token"];
+    $curl = curl_init();
+
+    curl_setopt_array($curl, [
+        CURLOPT_URL => "https://api.notion.com/v1/blocks/".$pageID."/children",
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "GET",
+        CURLOPT_HTTPHEADER => [
+            "Authorization: Bearer $tokens",
+            "Notion-Version: 2022-06-28",
+            "accept: application/json"
+        ],
+    ]);
+
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+
+    curl_close($curl);
+
+    if ($err) {
+        return "cURL Error #:" . $err;
+    } else {
+        $jsonResponse = json_decode($response, true);
+        return $jsonResponse;
+    }
+}
+
+//print_r(pageRequests(getPageID()[0]));
+
 ?>
