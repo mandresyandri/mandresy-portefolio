@@ -1,4 +1,4 @@
-<?php include("header-article.php")?>
+<?php include("header-article.php"); //var_dump($_GET); ?>
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
 

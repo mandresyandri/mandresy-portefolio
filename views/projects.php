@@ -18,7 +18,7 @@
                     echo '<div class="subheader-text project-title">'. $arr[0]["results"][$i]["properties"]["Titre"]["title"][0]["text"]["content"] . "</div>";
                     echo '<div class="body-text project-card-text">'. $arr[0]["results"][$i]["properties"]["Description"]["rich_text"][0]["text"]["content"] . "</div>";
                     echo '</div>';
-                    echo '<a class="button" href="./views/project-template.php">';
+                    echo '<a class="button" href="./views/project-template.php?id=123">'; // ajouter un élément dans la requête http pour
                     echo '<span class="button-text">En savoir plus</span>';
                     echo '<image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>';
                     echo '</a>';
