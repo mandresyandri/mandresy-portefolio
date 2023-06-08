@@ -42,31 +42,26 @@ function dbRequests(){
 //print_r(array(dbRequests()));
 
 // collecte de l'id des pages publiées
-/*function getPageID(){
+function getPageID(){
     // récupération des id de page dans notion
     $arr = array(dbRequests());
     $taille = count($arr[0]['results']);
     $i = $taille - 1;
     $ids = [];
 
-   while ($i >= 0){
-       if ($arr[0]["results"][$i]["properties"]["Status"]["select"]["name"] == "publier"){
-        array_push($ids, $arr[0]["results"][$i]["id"]);
-        $i--;
-       }
-       else{
-           $i--;
-       }
-    }
-    return $ids;
-}*/
+   while ($i >= 0) {
+       array_push($ids, $arr[0]["results"][$i]["id"]);
+       $i--;
+   }
+   return $ids;
+}
 
 //print_r(getPageID());
 
 // Nouveau test avec les pages ID
 function pageRequests($pageID){
     $myfile = file_get_contents("./tools/token-api.json") or die("Unable to read file!");
-    // $myfile = file_get_contents("token-api.json") or die("Unable to read file!"); // debug the api
+    //$myfile = file_get_contents("token-api.json") or die("Unable to read file!"); // debug the api
     $data =  json_decode($myfile,true);
     $tokens = $data["token"];
     $curl = curl_init();
@@ -99,6 +94,6 @@ function pageRequests($pageID){
     }
 }
 
-//print_r(pageRequests(getPageID()[0]));
+// print_r(pageRequests(getPageID()[0]));
 
 ?>
