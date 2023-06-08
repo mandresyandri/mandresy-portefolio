@@ -41,26 +41,9 @@ function dbRequests(){
 
 //print_r(array(dbRequests()));
 
-// collecte de l'id des pages publiées
-function getPageID(){
-    // récupération des id de page dans notion
-    $arr = array(dbRequests());
-    $taille = count($arr[0]['results']);
-    $i = $taille - 1;
-    $ids = [];
-
-   while ($i >= 0) {
-       array_push($ids, $arr[0]["results"][$i]["id"]);
-       $i--;
-   }
-   return $ids;
-}
-
-//print_r(getPageID());
-
 // Nouveau test avec les pages ID
 function pageRequests($pageID){
-    $myfile = file_get_contents("./tools/token-api.json") or die("Unable to read file!");
+    $myfile = file_get_contents("../tools/token-api.json") or die("Unable to read file!");
     //$myfile = file_get_contents("token-api.json") or die("Unable to read file!"); // debug the api
     $data =  json_decode($myfile,true);
     $tokens = $data["token"];
