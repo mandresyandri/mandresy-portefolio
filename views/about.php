@@ -3,24 +3,22 @@
     <span class="subheader-text">Mon parcours / À propos de moi</span>
     <div class="about-section-content">
       <div class="body-text">
-          <!-- Paragraphe de présenation -->
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida.
-          Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus.
-          Elit pellentesque habitant morbi tristique senectus et netus et.
-          Elementum tempus egestas sed sed risus pretium quam.
-          Nibh ipsum consequat nisl vel pretium lectus quam id leo.
-          Vitae congue mauris rhoncus aenean vel elit.
+          <!-- Paragraphe de présentation -->
+          Découvrez comment je peux transformer votre expérience en ligne !
+          En tant qu'étudiant passionné de l'Université Gustave Eiffel (Université Paris-Est)
+          et apprenti scrupuleux au sein de la Ville de Meudon, j'ai acquis des compétences approfondies
+          dans le domaine des Nouvelles Technologies, en particulier le Web. J'ai pris conscience de l'impact
+          essentiel des Sciences de données sur les applications web modernes, et j'ai décidé de consacrer mes
+          efforts à développer mes compétences en informatique dans ce domaine. Aujourd'hui, ma démarche est
+          centrée sur les données, car je crois fermement en leur pouvoir de transformer le paysage numérique.
+
       </div>
       <div class="body-text">
           <!-- Paragraphe d'explication -->
-          Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida.
-          Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus.
-          Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae.
-          Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.
-          Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula.
-          Donec enim diam vulputate ut.
+          Pendant les deux dernières années, je me suis investi dans une formation approfondie en sciences des données
+          afin de relever les défis métier les plus récents grâce à l'utilisation judicieuse des données. Voici mes domaines
+          d'expertise : Web Scrapping de pointe, DataViz captivante, Machine learning performant, Deeplearning révolutionnaire.
+          Laissez-moi vous aider à exploiter le plein potentiel de vos données pour atteindre de nouveaux sommets en ligne !
       </div>
     </div>
 </div>
