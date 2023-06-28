@@ -7,11 +7,11 @@
         </div>
         <div class="contact-section-content">
             <!-- <form action="" method="post"> -->
-            <form>
-                <div class="form-box"><input type="text" placeholder="Nom" /></div>
-                <div class="form-box"><input type="text" placeholder="Prénom" /></div>
-                <div class="form-box"><input type="text" placeholder="Mail" /></div>
-                <div class="form-box"><textarea name="message" placeholder="Votre message..."></textarea></div>
+            <form action="tools/form.php" method="POST">
+                <div class="form-box"><input type="text" name="nom" placeholder="Nom" /></div>
+                <div class="form-box"><input type="text" name="prenom" placeholder="Prénom" /></div>
+                <div class="form-box"><input type="text" name="mail" placeholder="Mail" /></div>
+                <div class="form-box"><textarea name="message" name="message" placeholder="Votre message..."></textarea></div>
                 <button class="button" type="submit">
                     <span class="button-text">
                         Envoyer
@@ -21,7 +21,6 @@
             </form>
         </div>
     </div>
-
 
     <!-- suite dans un autre bloc -->
 </div>
