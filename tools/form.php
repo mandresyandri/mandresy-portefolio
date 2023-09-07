@@ -5,6 +5,7 @@
     $userNameLast = $_POST["prenom"];
     $userMail = $_POST["mail"];
     $userMessage = $_POST["message"];
+    $date = date("Y-m-D");
 
     // Envoi des mail
     $to = 'mandresy.andriantsoanavalona@gmail.com';
@@ -23,6 +24,3 @@
         echo "Non pas envoyé";
     }
 ?>
-<script>
-    window(location)
-</script>
